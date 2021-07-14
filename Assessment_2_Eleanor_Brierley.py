@@ -1,16 +1,28 @@
+#QUESTION 3
+def palindrome_searcher():
+    word = str(input('Please enter a word:  '))
+    if word == word[::-1]:
+        print('Congratulations! Your word is a palindrome')
+    else:
+        print('Your word is not a palindrome')
+
+
+if __name__ == '__main__':
+    palindrome_searcher()
+
 #QUESTION 4
 import unittest
 from unittest import TestCase,  main
-from Assessment_2_Eleanor_Brierley import palindrome_detector
+from Assessment_2_Eleanor_Brierley import palindrome_searcher
 
 class Test_Palindrome(unittest.TestCase):
 
     def test_if_palindrome_is_true(self):
-        value = palindrome_detector().is_palindrome('noon')
+        value = palindrome_searcher().is_palindrome('noon')
         self.assertEquals(value, True)
 
     def test_if_palindrome_is_false(self):
-        value = palindrome_detector().is_palindrome('banana')
+        value = palindrome_searcher().is_palindrome('banana')
         self.assertEquals(value, False)
 
     def test_error_reverse(self):
@@ -18,10 +30,11 @@ class Test_Palindrome(unittest.TestCase):
         for bad_value in list_of_bad_value:
             self.assertRaises(
                 TypeError,
-                palindrome_detector().reverse,
+                palindrome_searcher().reverse,
                 bad_value
             )
-
+   def test_length(self):
+    value
 
 if __name__ == '__main__':
     unittest.main()
