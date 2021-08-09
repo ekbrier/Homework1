@@ -16,11 +16,11 @@ def generate_phrase(characters, phrase):
 
 
 # testing code number 1
-characters = 'acpalapi:rmionorg(eeth    '
-phrase = 'rip geronimo the alpaca :('
+characters = "cbacba"
+phrase = "aabbccc"
 generate_phrase(characters, phrase)
 
 # testing code number 2
-characters = "cbacba"
-phrase = "aabbccc"
+characters = 'acpalapi:rmionorg(eeth    '
+phrase = 'rip geronimo the alpaca :('
 generate_phrase(characters, phrase)
