@@ -5,7 +5,7 @@ def generate_phrase(characters, phrase):
     character_list = list(characters)
     phrase_list = list(phrase)
 
-    if len(characters) < len(phrase):
+    if len(phrase) > len(characters):
         print('False')
         return
 
