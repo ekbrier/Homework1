@@ -47,6 +47,6 @@ matrix = [
     [40, 41, 42, 44, 45, 1003],
     [99, 100, 103, 106, 128, 1004]
     ]
-target = 1000
+target = 44
 
 print(search_in_matrix(matrix, target)
